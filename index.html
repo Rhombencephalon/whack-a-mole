@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>micro:bit | whack-a-mole</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container-fluid navalert-container">
+        <nav class="navbar navbar-light navbar-expand-sm">
+            <a href="/" class="navbar-brand">micro:bit</a>
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mr-2"><a class="nav-link" href="https://microbit.org/guide/quick/" target="_blank">Getting Started</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="https://www.microbit.org/ideas/" target="_blank">Keeping Coding</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid callout-container">
+        <!-- callout for whack-a-mole -->
+        <div class="opaque-overlay">&nbsp;</div>
+        <div class="row">
+            <div class="col-12">
+                <section class="callout jumbotron text-center">
+                    <h1 class="jumbotron-header">whack-a-mole</h1>
+                    <hr class="block-divider block-divider--orange">
+                    <p class="lead"> Start a new project with micro:bit <a class="project" href="https://makecode.microbit.org/#editor" target="_blank">here</a></p>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+
+    <body>
+        <!-- project explaination-->
+        <div class="container-wrapper">
+            <div class="container steps-container content-container">
+                <section class="steps">
+                    <div class="row">
+                        <div class="col-12 page-header">
+                            <h2 class="text-uppercase">The Project</h2>
+                            <hr class="block-divider block-divider--short">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <p>Moles in micro:bit a small, and they move very fast! This program will train up your reflexes catch them all. Our mission is to program our micro:bits to create and randomly position a moving ‘mole’ – or ‘sprite’ (a single
+                                LED light). We’ll try to ‘whack’ these sprites by pressing the ‘A’ or ‘B’ button when they are in the correct part of our screens. Left for ‘A’, right for ‘B’. We’ll gain points for correct presses, and lose lives if we
+                                get it wrong… these moles are sneaky! Our program will keep track of our scores (which we’ll be able to view by pressing ‘A+B’ together), and the number of lives we have left. It’s game over if you lose three lives!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- steps sections 1-10 were going to be inserted here-->
+        <div class="container-wrapper">
+            <div class="container steps-container content-container">
+                <section class="steps">
+                    <div class="row">
+                        <div class="col-12 page-header">
+                            <h2 class="text-uppercase">steps:</h2>
+                            <hr class="block-divider block-divider--short">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-12 col-md-8"><img src="assets/s1.jpg"></div>
+                            <div class="col-6 col-md-4">On Start, the first thing we want micro:bit to do is create a sprite at a random position. To do this, we’ll first need a sprite variable to store this sprite in, so we’ll start by creating a new variable called ‘sprite’. Then,
+                                within the on start, we’ll set this new variable to create a sprite on our micro:bit screen. By default, our sprite will be created at x:2, y:2… the middle of the micro:bit screen. <br></br> This might seem a little bit
+                                odd. If the screen has 5 LEDs across (columns), and 5 LEDs up (rows), why is 2 in the middle? </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <p>Well we have this funny thing in programming where we start counting from zero, not one. So if you’ve got 5 moles, you’d count them as 0-4.
+                                    <br></br>Because of this, on our micro:bits, the middle LED column and row – column/row 3 of 5 – is given the value of 2. So if our sprite starts at 2, 2 (3rd column, 3rdrow), it will start in the middle.
+                                </p>
+                            </div>
+                            <div class="col-6 col-md-8"><img src="assets/s2.jpg"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- download to permit offline usage/ provide students with individual copies for instruction -->
+        <div class="container-wrapper container-wrapper--red">
+            <div class="container download-container content-container">
+                <section class="download">
+                    <div class="row">
+                        <div class="col-12 page-header">
+                            <h2 class="text-uppercase">download:</h2>
+                            <hr class="block-divider block-divider--short block-divider--white">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <p class="print">
+                            Need a printable version of these steps? Download it here.
+                            <a href="assets/download.pdf" target="_blank" class="cv-pdf">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        <span class="sr-only">Download link.</span>
+                    </a>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </body>
+
+</html>
